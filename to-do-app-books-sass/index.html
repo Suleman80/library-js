@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="banner">
+        <h1 class="banner__title">List of programming books to read</h1>
+        <form id="search-book" class="search">
+          <!-- bylo id seach-books -->
+          <input
+            class="search__input"
+            type="text"
+            placeholder="Search books..."
+          />
+        </form>
+      </header>
+
+      <main class="main">
+        <ul class="list">
+          <li class="list__li">
+            <span class="list__name">You don't know JS</span>
+            <button class="btn">Delete</button>
+          </li>
+          <li class="list__li">
+            <span class="list__name">JavaScript - mocne strony</span>
+            <button class="btn">Delete</button>
+          </li>
+          <li class="list__li">
+            <span class="list__name"
+              >JavaScript. Programowanie zaawansowane</span
+            >
+            <button class="btn">Delete</button>
+          </li>
+        </ul>
+      </main>
+
+      <footer class="footer">
+        <form id="add-book" class="search">
+          <input
+            class="search__input"
+            type="text"
+            placeholder="Add a book..."
+          />
+          <button class="btn">Add</button>
+        </form>
+      </footer>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

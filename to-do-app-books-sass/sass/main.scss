@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,700&display=swap");
+@import "variables";
+@import "reset";
+@import "wrapper";
+@import "search";
+@import "btn";
+
+.banner {
+  flex-basis: 20vh;
+  @include search;
+
+  &__title {
+    text-align: center;
+    padding: 20px;
+    font-size: $title-font-size;
+  }
+}
+
+.main {
+  flex-grow: 1;
+  background-color: white;
+}
+
+.list {
+  list-style: none;
+  margin: 2rem;
+
+  &__name {
+    font-size: $font-size;
+    float: left;
+  }
+
+  &__li {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 20px;
+
+    .btn {
+      flex-shrink: 0;
+    }
+  }
+}
+
+.footer {
+  flex-basis: 15vh;
+
+  @include search;
+}
+
+.btn {
+  @include btn;
+}

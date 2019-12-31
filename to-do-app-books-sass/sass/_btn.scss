@@ -1,0 +1,11 @@
+@mixin btn {
+  font-size: $font-size;
+  border: 2px solid darken($color: $btn-color, $amount: 20%);
+  padding: 2px 10px;
+  border-radius: 4px;
+  background-color: darken($color: $btn-color, $amount: 20%);
+
+  &:hover {
+    color: $btn-color-hover;
+  }
+}
